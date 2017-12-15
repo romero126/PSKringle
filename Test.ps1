@@ -1,5 +1,13 @@
 import-module .\*.psm1
 
+
+
+<#
+Build Repro Objects 
+
+
+
+#>
 Set-SecretSantaSnitch -Name "Joon" -EmailAddress "test@gmail.com"
 Add-SecretSantaParticipant -Name "Waffles" -EmailAddress "test@gmail.com"
 Add-SecretSantaParticipant -Name "Waffles" -EmailAddress "test@gmail.com"
@@ -8,6 +16,13 @@ Add-SecretSantaParticipant -Name "b" -EmailAddress "test@gmail.com"
 Add-SecretSantaParticipant -Name "c" -EmailAddress "test@gmail.com"
 Add-SecretSantaParticipant -Name "d" -EmailAddress "test@gmail.com"
 Add-SecretSantaParticipant -Name "Waffles2" -EmailAddress "test@gmail.com"
+
+
+<#
+
+Reproduce Error
+
+#>
 
 write-host "List"
 write-host "-----------------------"
